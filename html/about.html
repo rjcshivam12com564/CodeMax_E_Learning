@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | CodeMax</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+    body {
+      font-family: 'Lato', sans-serif;
+
+    }
+
+    fieldset {
+      border: 2px solid rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      margin: auto;
+      width: 60%;
+      background-color: rgba(0, 0, 0, 0.2)
+    }
+
+    .point {
+      margin: 14px;
+    }
+
+    .button {
+      color: black;
+      background-color: whitesmoke;
+      margin: 10px 20px;
+      width: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.9);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.0)
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      height: auto;
+      background: whitesmoke;
+      padding: 7px 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.9);
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .p {
+      font-size: 1.2rem;
+      padding: 3px;
+      margin: 0px 20px;
+    }
+
+    .sign-in {
+      font-size: 1.8rem;
+      font-weight: 620;
+      text-align: center;
+    }
+
+    label {
+      font-size: 1.2rem;
+      font-weight: 550;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    a {
+      color: rgba(0, 0, 0, 0.9)
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div id="logo"><a href="../index.html">CodeMax</a></div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="tutorial.html">Courses</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signin.html" class="sign-up">Log in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="about-body">
+    <h2>ABOUT US</h2>
+    <div class="about-banner">
+      <h3>One of the best website on the internet to learn coding. <br>Provide detailed information <br>Checks your knowledge.</h3>
+    </div>
+
+    <div class="about-info">
+      <h4>What is Code Max?</h4>
+      <p>Code Max is an open source platforms for the user to leran coding skills by learning different technologies and languages.</p>
+      <p>All of the contents are available for free of cost.</p>
+      <hr>
+
+      <div class="course">
+        <a href="html.html">HTML</a>
+        <br>
+        <a href="css.html">CSS</a>
+        <br>
+        <a href="javascript.html">JavaScript</a>
+        <br>
+        <a href="c.html">C</a>
+        <br>
+        <a href="cpp.html">C++</a>
+        <br>
+        <a href="python.html">Python</a>
+      </div>
+
+    </div>
+
+    <div class="about-info">
+      <h4>You Can Help</h4>
+      <p>Many people work very hard to ensure Code Max remains useful, updated, and interesting.</p>
+      <p><b>If you find an error, or a broken link, please tell us about it.(Contact us)</b></p>
+      <p>If you want others to discover Code Max, Do share this website.</p>
+    </div>
+
+    <div class="about-info">
+      <h4>Contact Us</h4>
+      <p>You can directly contact us via mail at <span><b>contact@codemax.in</b></span></p>
+      <h4 style="text-align: center">OR</h4>
+
+      <div class="form">
+        <fieldset>
+          <p class="sign-in">Contact Form</p>
+          <form action="" method="get">
+
+            <div class="point">
+              <label for="user-name">Name</label>
+              <br>
+              <input type="text" name="user-name" id="user-name" required placeholder=" Enter your Full Name">
+            </div>
+
+            <div class="point">
+              <label for="user-mail">Mail Id</label> <br>
+              <input type="email" name="user-mail" id="user-mail" required placeholder=" Enter your Mail Id ">
+            </div>
+
+            <div class="point">
+              <label for="message">Message</label> <br />
+              <textarea name="" id="message" cols="30" rows="5" required placeholder="Enter your Message here"></textarea>
+            </div>
+            <div class="point">
+              <label for="addmessage">Additional Information</label> <br />
+              <textarea name="" id="addmessage" cols="30" rows="5" required placeholder="Enter your additional information here"></textarea>
+            </div>
+
+            <input type="submit" class="button" value="SEND">
+          </form>
+        </fieldset>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div class="footer-content">
+      <h3>CODEMAX</h3>
+      <p>CodeMax is optimized for learning, testing, and training.Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</p>
+      <ul class="socials">
+        <li><a href="# "><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 by CodeMax all Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

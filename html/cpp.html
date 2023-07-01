@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C++ Tutorial | CodeMax</title>
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="logo"><a href="../index.html">CodeMax</a></div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="tutorial.html">Courses</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signin.html" class="sign-up">Log in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="body">
+    <div class="heading">
+      <h2>C++ Tutorials</h2>
+    </div>
+
+    <div class="navigation">
+      <h4>What's on this page</h4>
+      <hr>
+      <p><a href="#intro">Introduction</a></p>
+      <p><a href="#getstart">Getting started with C++</a></p>
+      <p><a href="#syntax">Syntax of C++</a></p>
+      <p><a href="#print">C++ cout statement</a></p>
+      <p><a href="#comment">Comments in C++</a></p>
+      <p><a href="#variable">Variables in C++</a></p>
+      <p><a href="#operator">Operations in C++</a></p>
+      <p><a href="#condition">Conditional statements</a></p>
+      <p><a href="#loops">Loops in C</a></p>
+      <p><a href="#quiz">C++ Quiz</a></p>
+    </div>
+
+    <div class="sub-point" id="intro">
+      <h3>Introduction</h3>
+      <hr>
+      <h4>What is C++ ?</h4>
+      <ul>
+        <li>C++ is a cross-platform language that can be used to create high-performance applications.</li>
+        <li>C++ was developed by Bjarne Stroustrup, as an extension to the <a href="c.html"> C </a> language</li>
+        <li>C++ gives programmers a high level of control over system resources and memory.</li>
+        <li>The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20.</li>
+      </ul>
+      <hr>
+      <h4>Why to Learn C++ ?</h4>
+      <ul>
+        <li>C++ is one of the most popular programming language in the world.</li>
+        <li>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</li>
+        <li>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</li>
+        <li>As C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa</li>
+      </ul>
+      <hr>
+      <h4>Difference between C and C++</h4>
+      <ul>
+        <li>C++ was developed as an extension of C, and both languages have almost the same syntax.</li>
+        <li>The main diffference between C and C++ is that C++ support classes and objects, while C does not support classes</li>
+      </ul>
+    </div>
+
+
+    <div class="sub-point" id="getstart">
+      <h3>Getting started with C++</h3>
+      <hr>
+      <h4>Requirements</h4>
+      <p>We require only two things to become a C++ Programmer.</p>
+      <ul>
+        <li>First thing is a Text Editor like notepad or an IDE like Visual Studio Code, Code Blocks, Eclipse to edit the C++ program files.</li>
+        <li>And the another thing is a compiler like GCC, to translate the C++ code into machine level language that the computer will understand.</li>
+      </ul>
+      <hr>
+      <h4>First C++ Program</h4>
+      <p>Leave everything behind and get ready we are going to execute our first C++ program.<br>Just type the below code in your text editor and run the file:- </p>
+
+      <div class="code">
+        <h4>firstprogram.cpp</h4>
+        <div class="actualcode">
+          <code>
+            #include &lt;iostream&gt;<br>
+            using namespace std; <br>
+            <br>
+            int main(){<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;cout << "Hello World!" ;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+              }
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>Hello World!</code>
+        </div>
+      </div>
+
+      <p>Don't be afraid for the code we will learn it later and if C++ is your first language then Congratulations! you have successfully run your first C++ program.</p>
+    </div>
+
+    <div class="sub-point" id="syntax">
+      <h3>Syntax of C++</h3>
+      <hr>
+      <h4>Syntax</h4>
+      <p>As we already run our first C++ program let break it down and understand the following code.</p>
+      <div class="code">
+        <h4>firstprogram.cpp</h4>
+        <div class="actualcode">
+          <code>
+            #include &lt;iostream&gt;<br>
+            using namespace std; <br>
+            <br>
+            int main(){<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;cout << "Hello World!" ;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+              }
+          </code>
+        </div>
+      </div>
+      <p>1. The very first line &nbsp;<code>#include &lt;iostream&gt;</code>&nbsp; is a header file library that lets us work with input and output functions, such as &nbsp;<code>cout</code>&nbsp; that is used in this program.<br> Don't worry if you not understand then assume that this line will appear in every C program.</p>
+      <p>2. <code>using namespace std; </code>means that we can use names for objects and variables from the standard library.</p>
+      <p>3. The blank line is optional it just increase the readability of the code.</p>
+      <p>4. Another thing that always appear in a C++ program, is &nbsp;<code>main()</code>&nbsp; This is called a function. Any code inside its curly brackets &nbsp;<code>{}</code>&nbsp; will be executed.</p>
+      <p>5. &nbsp;<code>cout </code>&nbsp; is used to output/print text to the screen. In our example it will output "Hello World!".</p>
+      <p>6. &nbsp;<code>return 0</code>&nbsp; ends the &nbsp;<code>main()</code>&nbsp; function and results into successful termination of Program and it is optional in C++.
+      </p>
+
+      <p>7. &nbsp;Do not forget to add the closing curly bracket &nbsp;<code>
+          }</code>&nbsp; to actually end the main function.</p>
+      <hr>
+      <div class="important-point">
+        <h4>Important Points</h4>
+        <ul>
+          <li>Every statement in C++ ends with a semicolon &nbsp;<code><strong>;</strong></code>&nbsp;</li>
+          <li>The compiler ignores white spaces. However, multiple lines makes the code more readable.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="sub-point" id="print">
+      <h3>C++ cout statement</h3>
+      <hr>
+      <h4>cout</h4>
+      <p>The &nbsp;<code>cout</code> &nbsp;function is used to output values/print text on the screen or console.</p>
+      <p>You can add as many &nbsp;<code>cout</code> &nbsp; functions as you want. But, note that it <strong>does not insert</strong> a new line at the end of the output</p>
+      <hr>
+      <h3>new line charcter</h3>
+      <p>To insert a new line, you can use the&nbsp;<code>\n</code> &nbsp;character</p>
+      <p>You can also output multiple lines with a single &nbsp;<code>cout</code> &nbsp; function using new line charcter &nbsp;<code>\n</code>&nbsp;. However, be aware that this will make the code harder to read</p>
+
+
+      <div class="code">
+        <h4>newline.cpp</h4>
+        <div class="actualcode">
+          <code>
+            #include &lt;iostream&gt;<br>
+            using namespacestd; <br>
+            <br>
+            int main(){<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;cout << "Hello, \nI am Learning C++.\nfrom CodeMax" ;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+              }
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>Hello, <br>I am Learning C++.<br>from CodeMax</code>
+        </div>
+      </div>
+
+
+      <p><strong>Note</strong> : If you use two new line character&nbsp;(<code>\n</code>&nbsp;) then it will create a blank line.</p>
+      <p><code>endl</code> is also used to give a line break.</p>
+      <hr>
+      <h4>More about newline charcter :</h4>
+      <p>The newline character&nbsp;(<code>\n</code>&nbsp;) is called an escape sequence, and it forces the cursor to change its position to the beginning of the next line on the screen. This results in a new line. </p>
+      <p>Let's see some other escape sequence charcter : </p>
+      <table border="1" align="center">
+        <thead>
+          <th>Escape Sequence charcter</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>\t</td>
+            <td>Creates a horizontal tab</td>
+          </tr>
+          <tr>
+            <td>\\</td>
+            <td>Inserts a backslash character (\)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-point" id="comment">
+      <h3>Comments in C++</h3>
+      <hr>
+      <p>Comments can be used to explain code, and to make it more readable. It can also be used to prevent execution when testing alternative code.</p>
+      <p>Comments can be <strong>singled-lined</strong> or <strong>multi-lined</strong>.</p>
+      <hr>
+      <h4>Single-line Comment</h4>
+      <p>Single-line comments start with two forward slashes &nbsp;(<code>//</code>)&nbsp;.</p>
+      <p>Any text between &nbsp;(<code>//</code>)&nbsp; is ignored by the compiler (will not be executed).</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            // This is an single line comment<br>
+            cout <<"Namaste" << endl; </code>
+        </div>
+      </div>
+      <hr>
+      <h4>Multi-line Comment</h4>
+      <p>Multi-line comments start with <code>/*</code> and ends with <code>*/</code>.Any text between <code>/*</code> and <code>*/</code> will be ignored by the compiler.</p>
+
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            /* This is an <br>
+            multi line <br>
+            comment */<br>
+            cout << "Namaste" << endl; </code>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-point" id="variable">
+      <h3>Variables in C++</h3>
+      <hr>
+      <p>Variables are containers for storing data values.
+        <br>In C++, there are different types of variables (defined with different keywords), for example:
+      </p>
+      <ul>
+        <li><code>int</code> - stores integers (whole numbers), without decimals, such as 123 or -123 </li>
+        <li><code>float</code> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+        <li><code>char</code> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+        <li><code>string</code> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+        <li><code>bool</code> - stores values with two states: true or false in form of 1 & 0</li>
+      </ul>
+      <hr>
+      <h4>Declaring (Creating) Variables</h4>
+      <p>To create a variable, specify the type and assign it a value</p>
+
+      <div class="code">
+        <h4>Syntax for Variable declaration</h4>
+        <div class="actualcode">
+          <code>
+            <em>type variableName = value;</em>
+          </code>
+        </div>
+      </div>
+
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            int num = 123; // 123 is assign to num <br>
+            float pi = 3.14; // 3.14 is assign to pi <br>
+            char aToz = 'c'; // 'c' is assign to aToz <br>
+            char mystr = 'Hello World'; // string 'Hello World' assign to mystr <br>
+            bool flag = 1; // 1 i.e true assign to flag
+          </code>
+        </div>
+      </div>
+      <p><strong>Note :</strong> If you assign a new value to an existing variable, it will overwrite the previous value</p>
+      <hr>
+
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            // creating varibles <br>
+            int num = 123; // 123 is assign to num <br>
+            float pi = 3.14; // 3.14 is assign to pi <br>
+            char aToz = 'c'; // 'c' is assign to aToz <br>
+            char mystr = 'Hello World'; // string 'Hello World' assign to mystr <br>
+            bool flag = 1; // 1 i.e true assign to flag <br>
+            <br>
+            // Printing the values <br>
+            cout << num << endl;<br>
+              cout << pi << endl;<br>
+                cout << aToz << endl; <br>
+                  cout << mystr << endl; <br>
+                    cout << flag << endl; </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>
+            123 <br>
+            3.14 <br>
+            c <br>
+            Hello World <br>
+            1
+          </code>
+        </div>
+      </div>
+      <hr>
+      <h4>C++ Variable name</h4>
+      <p>All C++ variables must be identified with unique names.These unique names are called <strong>identifiers</strong>.</p>
+      <p>The general rules for naming variables are : </p>
+      <ul>
+        <li>Names can contain letters, digits and underscores</li>
+        <li>Names must begin with a letter or an underscore (<code> _ </code>)</li>
+        <li>Names are case sensitive (<code>myVar</code> and <code>myvar</code> are different variables)</li>
+        <li>Names cannot contain whitespaces or special characters like !, #, %, etc.</li>
+        <li>Reserved words (such as <code>int </code>) cannot be used as names
+        </li>
+      </ul>
+    </div>
+
+    <div class="sub-point" id="operator">
+      <h3>Operators in C++</h3>
+      <hr>
+      <p>Operators are used to perform operations on variables and values.</p>
+      <p>Following are the operators available in C++ language :- </p>
+      <ul>
+        <li>Arithmetic operators</li>
+        <li>Assignment operators </li>
+        <li>Comparison operators </li>
+        <li>Logical operators</li>
+        <li>Bitwise operators</li>
+      </ul>
+      <hr>
+      <h4>Arithmetic Operators</h4>
+      <p>Arithmetic operators are used to perform common mathematical operations.</p>
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>+</td>
+            <td>Addition</td>
+            <td>Adds together two values</td>
+            <td>x + y</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>Subtraction</td>
+            <td>Subtracts one value from another</td>
+            <td>x - y</td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>Multiplication</td>
+            <td>Multiplies two values</td>
+            <td>x * y</td>
+          </tr>
+          <tr>
+            <td>/</td>
+            <td>Division</td>
+            <td>Divides one value by another</td>
+            <td>x / y</td>
+          </tr>
+          <tr>
+            <td>%</td>
+            <td>Modoulus</td>
+            <td>Returns the division remainder</td>
+            <td>x % y</td>
+          </tr>
+          <tr>
+            <td>++</td>
+            <td>Increment</td>
+            <td>Increases the value of a variable by 1</td>
+            <td>++x , x++</td>
+          </tr>
+          <tr>
+            <td>--</td>
+            <td>Decrement</td>
+            <td>Decreases the value of a variable by 1</td>
+            <td>--x , x--</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Assignment Operators</h4>
+      <p>Assignment operators are used to assign values to variables. we use the assignment operator (=) to assign the value </p>
+
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Example</th>
+          <th>Same as</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>=</td>
+            <td>x = 5</td>
+            <td>x = 5</td>
+          </tr>
+          <tr>
+            <td>+=</td>
+            <td>x += 5</td>
+            <td>x = x + 5</td>
+          </tr>
+          <tr>
+            <td>-=</td>
+            <td>x -= 5</td>
+            <td>x = x - 5</td>
+          </tr>
+          <tr>
+            <td>*=</td>
+            <td>x *= 5</td>
+            <td>x = x * 5</td>
+          </tr>
+          <tr>
+            <td>/=</td>
+            <td>x /= 5</td>
+            <td>x = x / 5</td>
+          </tr>
+          <tr>
+            <td>%=</td>
+            <td>x %= 5</td>
+            <td>x = x % 5</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <h4>Comparison Operators</h4>
+      <p>Comparison operators are used to compare two values. </p>
+      <p> <strong>Note : </strong>The return value of a comparison is either true (1) or false (0).</p>
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Name</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>==</td>
+            <td>Equals to</td>
+            <td>x == y</td>
+          </tr>
+          <tr>
+            <td>!=</td>
+            <td>Not equals to</td>
+            <td>x != y</td>
+          </tr>
+          <tr>
+            <td>></td>
+            <td>Greater than</td>
+            <td>x > y</td>
+          </tr>
+          <tr>
+            <td>
+              << /td>
+            <td>Less than</td>
+            <td>x < y</td>
+          </tr>
+          <tr>
+            <td>>=</td>
+            <td>Greater than equals to</td>
+            <td>x >= y</td>
+          </tr>
+          <tr>
+            <td>
+              <=< /td>
+            <td>Less than equals to</td>
+            <td>x <= y</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Logical Operators</h4>
+      <p>Logical operators are used to determine the logic between variables or values</p>
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&&</td>
+            <td>Logical And</td>
+            <td>Returns true if both statements are true</td>
+            <td>x < 5 && x < 10</td>
+          </tr>
+          <tr>
+            <td>||</td>
+            <td>Logical Or</td>
+            <td>Returns true if any one of the statements are true</td>
+            <td>x < 5 || x < 10</td>
+          </tr>
+          <tr>
+            <td>!</td>
+            <td>Logical Not</td>
+            <td>Reverse the result, returns false if the result is true</td>
+            <td>!(x < 5 && x < 10)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Sizeof Operator</h4>
+      <p>The memory size (in bytes) of a data type or a variable can be found with the <code>sizeof</code> operator</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            int myInt;<br>
+            float myFloat;<br>
+            double myDouble;<br>
+            char myChar;<br>
+            <br>
+            cout << sizeof(myInt));<br>
+              cout << sizeof(myFloat));<br>
+                cout << sizeof(myDouble));<br>
+                  cout << sizeof(myChar));<br>
+
+
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>
+            4 <br> 4 <br> 8 <br> 1
+          </code>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-point" id="condition">
+      <h3>Conditional statement</h3>
+      <hr>
+      <h4>Conditions and If Statements</h4>
+      <p>We can use conditional operators to perform different actions for different decisions.</p>
+      <p>C has the following conditional statements :- </p>
+      <ul>
+        <li>Use <code>if</code> to specify a block of code to be executed, if a specified condition is true</li>
+        <li>Use <code>else</code> to specify a block of code to be executed, if the same condition is false</li>
+        <li>Use <code>else if</code> to specify a new condition to test, if the first condition is false</li>
+        <li>Use switch to specify many alternative blocks of code to be executed</li>
+      </ul>
+      <hr>
+      <h4>The if else statement</h4>
+      <p>Use the if statement to specify a block of C++ code to be executed if a condition is true.And the else statement to specify a block of code to be executed if the condition is false</p>
+      <p><strong>Note : </strong> Else block is optional. It may be there or not.</p>
+
+      <div class="code">
+        <h4>Syntax</h4>
+        <div class="actualcode">
+          <code>
+            if (condition) { <br />
+            &nbsp; &nbsp; // block of code to be executed if the condition is true <br>
+            } <br>
+            else <br>
+            &nbsp; &nbsp;// block of code to be executed if the condition is false <br>
+            }
+          </code>
+        </div>
+      </div>
+
+      <div class="code">
+        <h4>if__else.cpp (Example)</h4>
+        <div class="actualcode">
+          <code>
+            int time = 20;<br>
+            <br>
+            if (time < 18) {<br>
+              &nbsp; &nbsp;cout << "Good day." ;<br>
+                } <br>
+                else {<br>
+                &nbsp;&nbsp;cout << "Good evening." ;<br>
+                  }
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>Good evening</code>
+        </div>
+      </div>
+
+      <hr>
+      <h4>Switch statement</h4>
+      <p>Instead of writing many if..else statements, you can use the switch statement.</p>
+      <p>The switch statement selects one of many code blocks to be executed :- </p>
+
+      <div class="code">
+        <h4>Syntax</h4>
+        <div class="actualcode">
+          <code>
+            switch(expression) {<br>
+            &nbsp;case x: <br>
+            &nbsp;&nbsp;// code block <br>
+            &nbsp;&nbsp;break; <br> <br>
+            &nbsp;case y: <br>
+            &nbsp;&nbsp;// code block <br>
+            &nbsp;&nbsp;break; <br> <br>
+            &nbsp;default: <br>
+            &nbsp;&nbsp;// code block <br>
+            }
+          </code>
+        </div>
+      </div>
+
+
+      <div class="code">
+        <h4>Switch.cpp (Example)</h4>
+        <div class="actualcode">
+          <code>
+            int day = 4;<br>
+            <br>
+            switch (day) {<br>
+            &nbsp;case 1: <br>
+            &nbsp;&nbsp;cout << "Monday" ; <br>
+              &nbsp;&nbsp;break; <br> <br>
+              &nbsp;case 2: <br>
+              &nbsp;&nbsp;cout << "Tuesday" ; <br>
+                &nbsp;&nbsp;break; <br> <br>
+                &nbsp;case 3: <br>
+                &nbsp;&nbsp;cout << "Wednesday" ; <br>
+                  &nbsp;&nbsp;break; <br> <br>
+                  &nbsp;case 4: <br>
+                  &nbsp;&nbsp;cout << "Thursday" ;<br>
+                    &nbsp;&nbsp;break; <br> <br>
+                    &nbsp;case 5: <br>
+                    &nbsp;&nbsp;cout << "Friday" ; <br>
+                      &nbsp;&nbsp;break; <br> <br>
+                      &nbsp;case 6: <br>
+                      &nbsp;&nbsp;cout << "Saturday" ; <br>
+                        &nbsp;&nbsp;break; <br> <br>
+                        &nbsp;case 7: <br>
+                        &nbsp;&nbsp;cout << "Sunday" ; <br>
+                          &nbsp;&nbsp;break; <br>
+                          }
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>Thursday</code>
+        </div>
+      </div>
+      <hr>
+      <h4>break keyword</h4>
+      <p>When C++ reaches a <code>break</code> keyword, it breaks out of the switch block. This will stop the execution of more code and case testing inside the block.</p>
+      <p>When a match is found, and the job is done, it's time for a break. There is no need for more testing.</p>
+      <hr>
+      <h4>default keyword</h4>
+      <p>The <code>default</code> keyword specifies some code to run if there is no case match</p>
+    </div>
+
+    <div class="sub-point" id="loops">
+      <h3>Loops in C++</h3>
+      <hr>
+      <p>Loops can execute a block of code as long as a specified condition is reached.</p>
+      <p>Loops are handy because they save time, reduce errors, and they make code more readable.</p>
+      <hr>
+      <p>There are yotal three loops in C++ language.</p>
+      <ul>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do..while loop</li>
+      </ul>
+      <hr>
+      <h4>for loop</h4>
+      <p>When you know exactly how many times you want to loop through a block of code, use the <code>for </code>loop </p>
+
+      <div class="code">
+        <h4>Syntax</h4>
+        <div class="actualcode">
+          <code>
+            for(initialisation; condition; updation){ <br>
+            &nbsp; &nbsp;// code block to be executed <br>
+            }
+          </code>
+        </div>
+      </div>
+
+      <div class="code">
+        <h4>forloop.cpp (Example)</h4>
+        <div class="actualcode">
+          <code>
+            for (int i = 0; i <= 5; i++){<br>
+              &nbsp;&nbsp;cout << i << endl; <br>
+                }
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>0 <br>1 <br>2 <br>3 <br> 4 <br> 5 </code>
+        </div>
+      </div>
+      <hr>
+
+      <h4>while loop</h4>
+      <p>The &nbsp;<code>while</code> loop loops through a block of code as long as a specified condition is true</p>
+
+      <div class="code">
+        <h4>Syntax</h4>
+        <div class="actualcode">
+          <code>
+            while(condition){ <br>
+            &nbsp; &nbsp;// code block to be executed <br>
+            }
+          </code>
+        </div>
+      </div>
+
+      <div class="code">
+        <h4>whileloop.cpp (Example)</h4>
+        <div class="actualcode">
+          <code>
+            int i = 0; <br>
+            <br>
+            while (i <= 5) { <br>
+              &nbsp;&nbsp;cout << i << endl; <br>
+                &nbsp;&nbsp;i++; <br>}
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>0 <br>1 <br>2 <br>3 <br> 4 <br> 5 </code>
+        </div>
+      </div>
+      <p><strong>Note : </strong>Do not forget to increase the variable used in the condition (i++), otherwise the loop will never end!</p>
+      <hr>
+
+      <h4>do..while loop</h4>
+      <p>The &nbsp;<code>do/while</code> &nbsp;loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+
+      <div class="code">
+        <h4>Syntax</h4>
+        <div class="actualcode">
+          <code>
+            do{ <br>
+            &nbsp; &nbsp;// code block to be executed <br>
+            } while(condition);
+          </code>
+        </div>
+      </div>
+
+      <div class="code">
+        <h4>dowhileloop.cpp (Example)</h4>
+        <div class="actualcode">
+          <code>
+            int i = 0; <br>
+            <br>
+            do{ <br>
+            &nbsp;&nbsp;cout << i << endl; <br>
+              &nbsp;&nbsp;i++; <br>
+              } while(i <= 5); </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>0 <br>1 <br>2 <br>3 <br> 4 <br> 5 </code>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sub-point" id="quiz">
+      <p>If you want to test yourself then must perform our <strong><a href="cppquiz.html" style="color: rgba(0, 0, 0, 0.7)">C++ Quiz</a></strong></p>
+    </div>
+  </section>
+
+
+  <footer class="lastblock">
+    <div class="footer-content">
+      <h3>CODEMAX</h3>
+      <p>CodeMax is optimized for learning, testing, and training.Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</p>
+      <ul class="socials">
+        <li><a href="# "><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 by CodeMax all Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

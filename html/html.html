@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Tutorial | CodeMax</title>
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="logo"><a href="../index.html">CodeMax</a></div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="tutorial.html">Courses</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signin.html" class="sign-up">Log in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="body">
+    <div class="heading">
+      <h2>HTML Tutorials</h2>
+    </div>
+
+    <div class="navigation">
+      <p><a href="#intro">HTML Introduction</a></p>
+      <p><a href="#editor">HTML Editors</a></p>
+      <p><a href="#element">HTML Elements</a></p>
+      <p><a href="#basictags">HTML Basic tags</a></p>
+      <p><a href="#attribute">HTML Attributes</a></p>
+      <p><a href="#formatting">HTML text formatting</a></p>
+      <p><a href="#comments">HTML Comments</a></p>
+      <p><a href="#image">HTML Images</a></p>
+      <p><a href="#video">HTML Video</a></p>
+      <p><a href="#audio">HTML Audio</a></p>
+      <p><a href="#quiz">HTML Quiz</a></p>
+
+
+    </div>
+
+    <div class="sub-point" id="intro">
+      <h3>HTML Introduction</h3>
+      <hr>
+      <h4>What is HTML?</h4>
+      <ul>
+        <li>HTML stands for Hyper Text Markup Language </li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML elements tell the browser how to display the content</li>
+      </ul>
+      <hr>
+      <h4>Structure of HTML Document</h4>
+      <div class="code">
+        <h4>Index.html ( Example )</h4>
+        <div class="actualcode">
+          <code>
+            &lt;!DOCTYPE html&gt; <br>
+            &lt;html&gt; <br>
+            &lt;head&gt; <br>
+            &nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt; <br>
+            &lt;/head&gt; <br>
+            &lt;body&gt; <br>
+            <br>
+            &lt;h1&gt;My First Heading&lt;/h1&gt; <br>
+            &lt;p&gt;My first paragraphl&lt;/p&gt; <br>
+            <br>
+            &lt;/body&gt; <br>
+            &lt;/html&gt; <br>
+          </code>
+        </div>
+
+      </div>
+
+      <div class="output">
+        <h4>Output ( On web browser )</h4>
+        <div class="actualcode">
+          <img src="../img/html/01.png" alt="" width=" 50%">
+        </div>
+      </div>
+
+      <hr>
+      <h4>Example Explained</h4>
+      <ul>
+        <li>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document</li>
+        <li>The <code>&lt;html&gt;</code> element is the root element of an HTML page</li>
+        <li>The <code>&lt;head&gt;</code> element contains meta information about the HTML page</li>
+        <li>The <code>&lt;title&gt;</code> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+        <li>The <code>&lt;body&gt;</code> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+        <li>The <code>&lt;h1&gt;</code> element defines a large heading</li>
+        <li>The <code>&lt;p&gt;</code> element defines a paragraph</li>
+      </ul>
+
+    </div>
+
+    <div class="sub-point" id="editor">
+      <h3>HTML Editors</h3>
+      <p>A simple text editor is all you need to learn HTML.</p>
+      <hr>
+      <h4>Learn HTML Using Notepad or TextEdit</h4>
+      <p>Step 1: Open Notepad (PC) ot TextEdit (Mac)</p>
+      <p>Step 2: Write HTML code</p>
+      <p>Step 3: Save the HTML Page as extension of (.html) or (.htm)</p>
+      <p>Step 4: Open the HTML Page in Your Browser</p>
+    </div>
+
+    <div class="sub-point" id="element">
+      <h3>HTML Elements</h3>
+      <hr>
+      <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+      <hr>
+      <h4>HTML Elements</h4>
+      <p>The HTML element is everything from the start tag to the end tag:</p>
+      <div class="code">
+        <h4>Syntax of element</h4>
+        <div class="actualcode">
+          <code>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code>
+        </div>
+      </div>
+      <p><strong>Note :</strong> Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+      <hr>
+      <h4>Nested HTML Elements</h4>
+      <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+      <p>All HTML documents consist of nested HTML elements.</p>
+      <p>The following example contains four HTML elements (<code>&lt;html&gt;, &lt;body&gt;, &lt;h1&gt; and &lt;p&gt; &lt;/p&gt;</code>):</p>
+      <hr>
+      <h4>Never Skip the End Tag</h4>
+      <p>Don't forget to add end tag whenever necessary otherwise it trouble a lot. Some HTML elements will display correctly, even if you forget the end tag</p>
+      <p>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+      <hr>
+      <h4>HTML is Not Case Sensitive</h4>
+      <p>HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.</p>
+    </div>
+
+    <div class="sub-point" id="basictags">
+      <h3>HTML Basic tags</h3>
+      <p>In this chapter we will show some basic HTML tags and their examples.</p>
+      <hr>
+      <h4>HTML Documents</h4>
+      <p>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.</p>
+      <p>The HTML document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code>.</p>
+      <p>The visible part of the HTML document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>.</p>
+      <hr>
+      <h4>HTML Headings</h4>
+      <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+
+      <div class="code">
+        <h4>heading.html</h4>
+        <div class="actualcode">
+          <code>
+            &lt;h1&gt;This is heading 1&lt;/h1&gt; <br>
+            &lt;h2&gt;This is heading 2&lt;/h2&gt; <br>
+            &lt;h3&gt;This is heading 3&lt;/h3&gt; <br>
+            &lt;h4&gt;This is heading 4&lt;/h4&gt; <br>
+            &lt;h5&gt;This is heading 5&lt;/h5&gt; <br>
+            &lt;h6&gt;This is heading 6&lt;/h6&gt; <br>
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output ( On web browser )</h4>
+        <div class="actualcode">
+          <img src="../img/html/02.png" alt="" width=" 50%">
+        </div>
+      </div>
+
+      <hr>
+      <h4>HTML Paragraphs</h4>
+      <p>HTML paragraphs are defined with the<code> &lt;p&gt;</code> tag</p>
+
+      <div class="code">
+        <h4>paragraph.html</h4>
+        <div class="actualcode">
+          <code>
+            &lt;p&gt;This is an paragraph&lt;/p&gt; <br>
+            &lt;p&gt;This is an another paragraph&lt;/p&gt;
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output ( On web browser )</h4>
+        <div class="actualcode">
+          <img src="../img/html/03.png" alt="" width=" 50%">
+        </div>
+      </div>
+
+      <hr>
+      <h4>HTML links</h4>
+      <p>HTML links are defined with the <code> &lt;a&gt;</code> tag</p>
+      <p>The link's destination is specified in the href attribute </p>
+      <p>Attributes are used to provide additional information about HTML elements. </p>
+      <p>You will learn more about attributes in a later chapter.</p>
+      <div class="code">
+        <h4>anchor.html</h4>
+        <div class="actualcode">
+          <code>
+            &lt;a href="www.google.com"&gt;Google&lt;/a&gt;
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output ( On web browser )</h4>
+        <div class="actualcode">
+          <img src="../img/html/04.png" alt="" width=" 50%">
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="sub-point" id="attribute">
+      <h3>HTML Attributes</h3>
+      <hr>
+      <p>HTML attributes provide additional information about HTML elements.</p>
+      <hr>
+      <h4>HTML Attributes</h4>
+      <ul>
+        <li>Attributes provide additional information about elements</li>
+        <li>Attributes are always specified in the start tag</li>
+        <li>Attributes usually come in name/value pairs like: name="value" </li>
+      </ul>
+      <hr>
+      <h4>The href Attribute</h4>
+      <hr>
+      <p>The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;a href="www.google.com"&gt;Google&lt;/a&gt;
+          </code>
+        </div>
+      </div>
+
+      <hr>
+      <h4>The src Attribute</h4>
+      <p>The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;img src="image.jpg"&gt;
+          </code>
+        </div>
+      </div>
+      <hr>
+      <p>There are two ways to specify the URL in the src attribute:</p>
+      <p><strong>1. Absolute URL : </strong>Links to an external image that is hosted on another website. Example</p>
+      <p><strong>Note :</strong>External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
+      <p><strong>2. Relative URL : </strong>Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page.</p>
+      <p><strong>Note :</strong>It is almost always best to use relative URLs. They will not break if you change domain.</p>
+      <hr>
+      <h4>The width and height Attributes</h4>
+      <p>The &lt;img&gt; tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;img src="img.jpg" width="500" height="600"&gt;
+          </code>
+        </div>
+      </div>
+      <hr>
+      <h4>The alt Attribute</h4>
+      <p>The required alt attribute for the &lt;img&gt; tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;img src="img.jpg" width="500" height="600" alt="this is an image"&gt;
+          </code>
+        </div>
+      </div>
+      <hr>
+      <h4>The style Attribute</h4>
+      <p>The style attribute is used to add styles to an element, such as color, font, size, and more.</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
+          </code>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-point" id="formatting">
+      <h3>HTML Text Formatting</h3>
+      <hr>
+      <p>HTML contains several elements for defining text with a special meaning.</p>
+      <hr>
+      <h4>HTML Formatting Elements</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Used for</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;b&gt;</td>
+            <td>Bold text</td>
+            <td>Defines bold text</td>
+          </tr>
+          <tr>
+            <td>&lt;strong&gt;</td>
+            <td>Important text </td>
+            <td>Defines important text</td>
+          </tr>
+          <tr>
+            <td>&lt;i&gt;</td>
+            <td>Italic text</td>
+            <td>Defines a part of text in an <br>alternate voice or mood</td>
+          </tr>
+          <tr>
+            <td>&lt;em&gt;</td>
+            <td>Emphasized text</td>
+            <td>Defines emphasized text</td>
+          </tr>
+          <tr>
+            <td>&lt;mark&gt;</td>
+            <td>Marked text</td>
+            <td>Defines marked/highlighted text</td>
+          </tr>
+          <tr>
+            <td>&lt;small&gt;</td>
+            <td>Smaller text</td>
+            <td>Defines smaller text</td>
+          </tr>
+          <tr>
+            <td>&lt;big&gt;</td>
+            <td>Bigger text</td>
+            <td>define Bigger text</td>
+          </tr>
+          <tr>
+            <td>&lt;del&gt;</td>
+            <td>Deleted text</td>
+            <td>Defines deleted text</td>
+          </tr>
+          <tr>
+            <td>&lt;ins&gt;</td>
+            <td>Inserted text</td>
+            <td>Defines inserted text</td>
+          </tr>
+          <tr>
+            <td>&lt;sub&gt;</td>
+            <td>Subscript text</td>
+            <td>Defines subscripted text</td>
+          </tr>
+          <tr>
+            <td>&lt;sup&gt;</td>
+            <td>Superscript text</td>
+            <td>Defines superscripted text</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Let's look up for Examples</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            <p>This is example of &lt;b&gt;bold&lt;/b&gt; tag.</p>
+            <p> It is &lt;strong&gt;strong &lt;/strong&gt; tag. </p>
+            <p> it is a &lt;i&gt; Italic text.&lt;/i&gt; </p>
+            <p> &lt;em&gt;Emphasize text &lt;/em&gt; em tag is used.</p>
+            <p> this statement uses &lt;mark&gt;Mark tag&lt;/markgt;.</p>
+            <p>the statement shows &lt;u&gt;Underline&lt;/u&gt;tag</p>
+            <p>tt tag is refers to <tt>Teletype.</tt></p>
+            <p>strike tag is used to display text like this '&lt;strike&gt; HTML &lt;/strike&gt;'</p>
+            <p> Pythagoras theorem is AB&lt;sup&gt;2&lt;/sup&gt; + BC&lt;sup&gt;2&lt;/sup&gt; = AC&lt;sup&gt;2&lt;/sup&gt;</p>
+            <p>log<sub>e</sub> = 1</p>
+            <p> Delete tag <del>is similar as strike tag ??</del> </p>
+            <p><ins>Inserted text </ins> is similar as underline tag ???</p>
+            <p><big> Big tag</big> increase size of text.</p>
+            <p><small>Small Tag</small> decrease size of text.</p>
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <img src="../img/html/05.png" alt="" width="50%">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sub-point" id="comments">
+      <h3>HTML Comments</h3>
+      <hr>
+      <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+      <hr>
+      <h4>HTML Comment Tag</h4>
+      <p>You can add comments to your HTML source by using the following syntax:</p>
+      <div class="code">
+        <h4>Syntax</h4>
+        <div class="actualcode">
+          <code>
+            &lt;!-- Comment goes here --&gt;
+          </code>
+        </div>
+      </div>
+      <p>Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+      <p>Comments are not displayed by the browser, but they can help document your HTML source code.</p>
+      <p>You can also hide more than one line, everything between the &lt;!-- and the --&gt; will be hidden from the display.</p>
+    </div>
+
+    <div class="sub-point" id="image">
+      <h3>HTML Images</h3>
+      <hr>
+      <p>Images can improve the design and the appearance of a web page.</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:<br>ANd9GcSYVMfINoIvDIfs0CCIJPmX<br>uaGTenNH6aoMPg&usqp=CAU" alt="this is an image" height="60%" &gt;
+            <br> <br>
+            &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzkkHc1E5gTyz6-AoKaItXDC3AAgytTtL70Q&usqp=CAU" alt="this is an another Image" height="60%"&gt;
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVMfINoIvDIfs0CCIJPmXuaGTenNH6aoMPg&usqp=CAU" alt="" height="60%">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzkkHc1E5gTyz6-AoKaItXDC3AAgytTtL70Q&usqp=CAU" alt="" height="60%">
+        </div>
+      </div>
+      <p><strong>Note :</strong> We have already discussed the image attributes in previous lessons. refer <a style="color: rgba(0, 0, 0, 0.7)" href="#attribute">HTML Attributes</a></p>
+
+      <hr>
+      <h4>Common Image Formats</h4>
+      <p>Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera)</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Abbreviation</th>
+            <th>File Format</th>
+            <th>File Extensions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JPEG</td>
+            <td>Joint Photographic Expert <br> Group image</td>
+            <td>.jpg,&nbsp; .jpeg,&nbsp; <br>.jfif,&nbsp; .pjpeg, &nbsp;.pjp</td>
+          </tr>
+          <tr>
+            <td>PNG</td>
+            <td>Portable Network Graphics</td>
+            <td>.png</td>
+          </tr>
+          <tr>
+            <td>SVG</td>
+            <td>Scalable Vector Graphics</td>
+            <td>.svg</td>
+          </tr>
+          <tr>
+            <td>GIF</td>
+            <td>Graphics Interchange Format</td>
+            <td>.gif</td>
+          </tr>
+          <tr>
+            <td>ICO</td>
+            <td>Microsoft Icon</td>
+            <td>.ico</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-point" id="video">
+      <h3>HTML Video</h3>
+      <hr>
+      <h4>The HTML &lt;video&gt; Element</h4>
+      <p>To show a video in HTML, use the &lt;video&gt; element</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;video width="60%" controls muted&gt; <br>
+            &nbsp;&nbsp; &lt;source src="mov_bbb.mp4" type="video/mp4"&gt; <br>
+            &nbsp;&nbsp; &lt;source src="mov_bbb.ogg" type="video/ogg"&gt; <br>
+            &nbsp;&nbsp; Your browser does not support HTML video. <br>
+            &lt;/video&gt;
+            &gt;
+
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <video width="60%" controls muted poster="../img/poster.png">
+            <source src="../video/01.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+        </div>
+      </div>
+      <p>The <code>controls</code> attribute adds video controls, like play, pause, and volume.</p>
+      <p>It is a good idea to always include <code>width</code> and <code>height</code> attributes. If height and width are not set, the page might flicker while the video loads.</p>
+      <p>The &lt;source&gt; element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.</p>
+      <p>The text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element. </p>
+      <p>To start a video automatically, use the <code>autoplay</code> attribute</p>
+      <p>Add <code>muted</code> after <code>autoplay</code> to let your video start playing automatically (but muted)</p>
+
+    </div>
+
+    <div class="sub-point" id="audio">
+      <h3>HTML Audio</h3>
+      <hr>
+      <h4>The HTML &lt;audio&gt; Element</h4>
+      <p>To play an audio file in HTML, use the &lt;audio&gt; element</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          &lt;audio controls&gt; <br>
+          &nbsp;&nbsp;&lt;source src="../audio/01.mp3" type="audio/mp3"&gt; <br>
+          &nbsp;&nbsp;Your browser does not support the audio element. <br>
+          &lt/audio&gt;
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <audio controls>
+            <source src="../audio/01.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <p>The <code>controls</code> attribute adds audio controls, like play, pause, and volume.</p>
+      <p>The &lt;source&gt; element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.</p>
+      <p>The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not support the &lt;audio&gt; element.</p>
+      <p>To start an audio file automatically, use the <code>autoplay</code> attribute</p>
+      <p>Add <code>muted</code> after autoplay to let your audio file start playing automatically (but muted):</p>
+
+    </div>
+    <div class="sub-point" id="quiz">
+      <p>If you want to test yourself then must perform our <strong><a href="htmlquiz.html" style="color: rgba(0, 0, 0, 0.7)">HTML Quiz</a></strong></p>
+    </div>
+
+
+  </section>
+
+  <footer class="lastblock">
+    <div class="footer-content">
+      <h3>CODEMAX</h3>
+      <p>CodeMax is optimized for learning, testing, and training.Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</p>
+      <ul class="socials">
+        <li><a href="# "><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 by CodeMax all Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

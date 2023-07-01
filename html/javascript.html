@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Tutorial | CodeMax</title>
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="logo"><a href="../index.html">CodeMax</a></div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="tutorial.html">Courses</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signin.html" class="sign-up">Log in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="body">
+    <div class="heading">
+      <h2>JavaScript Tutorials</h2>
+    </div>
+
+    <div class="navigation">
+      <p><a href="#intro">JavaScript Introduction</a></p>
+      <p><a href="#jsfile">JavaScript Where to</a></p>
+      <p><a href="#output">JavaScript Output</a></p>
+      <p><a href="#statement">JavaScript Statements</a></p>
+      <p><a href="#syntax">JavaScript Syntax</a></p>
+      <p><a href="#quiz">JavaScript Quiz</a></p>
+      <!--<p><a href=""></a></p>
+      <p><a href=""></a></p>
+      <p><a href=""></a></p>
+      <p><a href=""></a></p> -->
+    </div>
+
+    <div class="sub-point" id="intro">
+      <h3>JavaScript Introduction</h3>
+      <p>This page contains some examples of what JavaScript can do.</p>
+      <hr>
+      <h4>JavaScript Can Change HTML Content</h4>
+      <p>One of many JavaScript HTML methods is &nbsp;<code>getElementById()</code> </p>
+      <hr>
+      <h4>JavaScript Can Change HTML Attribute Values</h4>
+      <hr>
+      <h4>JavaScript Can Change HTML Styles (CSS)</h4>
+      <p>Changing the style of an HTML element, is a variant of changing an HTML attribute</p>
+      <hr>
+      <h4>JavaScript Can Hide HTML Elements</h4>
+      <p>Hiding HTML elements can be done by changing the &nbsp;<code>display</code> style</p>
+      <hr>
+      <h4>JavaScript Can Show HTML Elements</h4>
+      <p>Showing hidden HTML elements can also be done by changing the display style</p>
+      <hr>
+      <p><strong>Note :</strong> JavaScript and Java both are completely different languages, both in concept and design.</p>
+      <p>avaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.</p>
+    </div>
+
+    <div class="sub-point" id="jsfile">
+      <h3>JavaScript Where To </h3>
+      <hr>
+      <h4>The &lt;script&gt; Tag</h4>
+      <p>In HTML, JavaScript code is inserted between <code>&lt;script&gt;</code> and <code>&lt;/script&gt;</code> tags</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;script&gt; <br>
+            &nbsp;&nbsp;document.write = "My First JavaScript";<br>
+            &lt;/script&gt;
+          </code>
+        </div>
+      </div>
+      <p>This &nbsp;<code>document.write()</code> is used to display text "My First JavaScript" on HTML page</p>
+      <hr>
+      <h4>JavaScript in &lt;head&gt; or &lt;body&gt;</h4>
+      <p>You can place any number of scripts in an HTML document.</p>
+      <p>Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both.</p>
+      <p><strong>Note :</strong> Placing scripts at the bottom of the &lt;body&lt;element improves the display speed, because script interpretation slows down the display.</p>
+      <hr>
+      <h4>External JavaScript</h4>
+      <p>Scripts can also be placed in external files and link to the HTML file like this</p>
+      <div class="code">
+        <h4>Example ( linking External js file to HTML file)</h4>
+        <div class="actualcode">
+          <code>
+            &lt;script src="myScript.js"&gt;&lt;/script&gt;
+          </code>
+        </div>
+      </div>
+      <p>External scripts are practical when the same code is used in many different web pages.</p>
+      <p>JavaScript files have the file extension .js.</p>
+      <p>To use an external script, put the name of the script file in the &nbsp;<code>src</code> (source) attribute of a &lt;script&gt; tag</p>
+      <p>You can place an external script reference in &lt;head&gt; or &lt;body&gt; as you like.</p>
+      <p><strong>Note :</strong> sometimes you may have to give path of your js file. we havr already cover it in Our <a href="html.html" style="color: rgba(0, 0, 0, 0.7)">HTML Tutorials</a>. So you cab learn it there</p>
+    </div>
+
+    <div class="sub-point" id="output">
+      <h3>JavaScript Output</h3>
+      <hr>
+      <h4>JavaScript Display Options</h4>
+      <p>JavaScript can "display" data in different ways:</p>
+      <ul>
+        <li>Writing into an HTML element, using &nbsp;<code>innerHTML</code>.</li>
+        <li>Writing into the HTML output using &nbsp;<code>document.write()</code>.</li>
+        <li>Writing into the browser console, using &nbsp;<code>console.log()</code>.</li>
+      </ul>
+      <hr>
+      <h4>innerHTML</h4>
+      <p>To access an HTML element, JavaScript can use the &nbsp;<code>document.getElementById(id)</code> method.</p>
+      <p>The &nbsp;<code>id</code> attribute defines the HTML element. The &nbsp;<code>innerHTML</code> property defines the HTML content</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;p&gt;12 + 6 = &lt;/p&gt;
+            <br>
+            &lt;p id="demo"&gt;&lt;/p&gt;
+            <br> <br>
+            &lt;script&gt; <br>
+            &nbsp;&nbsp;document.getElementById("demo").innerHTML = 12 + 6; <br>
+            &lt;/script&gt;
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <p>12 + 6 = </p>
+          <p id="demo"></p>
+          <script>
+            document.getElementById("demo").innerHTML = 12 + 6;
+          </script>
+        </div>
+      </div>
+      <p>Changing the &nbsp;<code>innerHTML</code> property of an HTML element is a common way to display data in HTML.</p>
+      <hr>
+      <h4>document.write()</h4>
+      <p>For testing purposes, it is convenient to use &nbsp;<code>document.write()</code></p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;p&gt;5 + 6 = &lt;/p&gt;
+            <br>
+            &lt;p id="demo"&gt;&lt;/p&gt;
+            <br> <br>
+            &lt;script&gt; <br>
+            &nbsp;&nbsp; document.write(5 + 6); <br>
+            &lt;/script&gt;
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <p>5 + 6 = </p>
+          <p id="demo"></p>
+          <script>
+            document.write(5 + 6);
+          </script>
+        </div>
+      </div>
+      <p>Using &nbsp;<code>document.write()</code> after an HTML document is loaded, will delete all existing HTML</p>
+      <hr>
+      <h4>console.log()</h4>
+      <p>For debugging purposes, you can call the &nbsp;<code>console.log()</code> method in the browser to display data.</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            &lt;script&gt; <br>
+            &nbsp;&nbsp; console.log(10 + 10); <br>
+            &lt;/script&gt;
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <img src="../img/html/07.png" alt="" width="60%">
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-point" id="statement">
+      <h3>JavaScript Statements</h3>
+      <hr>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            let x, y, z;&nbsp;&nbsp;// Statement 1 <br>
+            x = 5;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Statement 2 <br>
+            y = 6;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Statement 3 <br>
+            z = x + y;&nbsp;&nbsp;&nbsp;&nbsp;// Statement 4 <br>
+          </code>
+        </div>
+      </div>
+      <h4>JavaScript Programs</h4>
+      <p>A computer program is a list of "instructions" to be "executed" by a computer.</p>
+      <p>In a programming language, these programming instructions are called statements.</p>
+      <p>A JavaScript program is a list of programming statements.</p>
+      <p>In HTML, JavaScript programs are executed by the web browser.</p>
+      <hr>
+      <h4>JavaScript Statements</h4>
+      <p>JavaScript statements are composed of Values, Operators, Expressions, Keywords, and Comments.</p>
+      <p>Most JavaScript programs contain many JavaScript statements.</p>
+      <p>The statements are executed, one by one, in the same order as they are written.</p>
+      <hr>
+      <h4>Semicolons ( ; )</h4>
+      <p>Semicolons separate JavaScript statements.Add a semicolon at the end of each executable statement</p>
+    </div>
+
+    <!--     <p>  </p>   -->
+    <div class="sub-point" id="syntax">
+      <h3>JavaScript Syntax</h3>
+      <hr>
+      <p>JavaScript syntax is the set of rules, how JavaScript programs are constructed</p>
+      <hr>
+      <h4>JavaScript Variables</h4>
+      <p>In a programming language, variables are used to store data values.</p>
+      <p>JavaScript uses the keywords var, let and const to declare variables.</p>
+      <p>An equal sign is used to assign values to variables.</p>
+      <p>If you want a general rule: always declare variables with &nbsp;<code>const</code></p>
+      <p>If you think the value of the variable can change, use &nbsp;<code>let</code></p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            var x = 4; <br>
+            let y = 6; <br>
+            const pi = 3.14;
+          </code>
+        </div>
+      </div>
+      <p>we can display this variable on screen by using <a href="#output" style="color: rgba(0, 0, 0, 0.7)">JavaScript output</a> </p>
+      <hr>
+      <h4>JavaScript Comments</h4>
+      <p>Code after double slashes // or between /* and */ is treated as a comment.</p>
+      <p>Comments are ignored, and will not be executed</p>
+      <div class="code">
+        <h4>Syntax</h4>
+        <div class="actualcode">
+          <code>
+            // This is how a single line comment is used <br>
+            <br>
+            /* <br>this is how <br> a multi -line <br> comment is used. <br>*/
+          </code>
+        </div>
+      </div>
+      <p>Using comments to prevent execution of code is suitable for code testing.</p>
+
+
+    </div>
+
+    <div class="sub-point" id="quiz">
+      <p>If you want to test yourself then must perform our <strong><a href="javascriptquiz.html" style="color: rgba(0, 0, 0, 0.7)">JavaScript Quiz</a></strong></p>
+    </div>
+    <!-- 
+    <div class="sub-point" id="">
+      <h3></h3>
+      <hr>
+      <h4></h4>
+    </div>
+
+    <div class="sub-point" id="">
+      <h3></h3>
+      <hr>
+      <h4></h4>
+    </div>
+
+    <div class="sub-point" id="">
+      <h3></h3>
+      <hr>
+      <h4></h4>
+    </div>
+ -->
+
+  </section>
+
+
+
+  <footer class="lastblock">
+    <div class="footer-content">
+      <h3>CODEMAX</h3>
+      <p>CodeMax is optimized for learning, testing, and training.Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</p>
+      <ul class="socials">
+        <li><a href="# "><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 by CodeMax all Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

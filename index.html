@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | CodeMax</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="logo">CodeMax</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="html/tutorial.html">Courses</a>
+        </li>
+        <li><a href="html/articles.html">Articles</a></li>
+        <li><a href="html/about.html">About</a></li>
+        <li><a href="html/signin.html" class="log-in">Log in</a></li>
+      </ul>
+    </nav>
+    <div class="title">
+      <h1>CodeMax</h1>
+    </div>
+  </header>
+
+
+  <div class="body">
+    <div>
+      <h2>COURSES</h2>
+    </div>
+    <p id="specialpara">All Available Courses are mentioned below</p>
+    <div class="webdev">
+
+      <h3>Web Development</h3>
+
+      <div class="img">
+
+        <a href="html/html.html">
+          <img src="img/html.png" width="185vw">
+        </a>
+
+        <!-- <a href="html/css.html">
+     <img src="img/css.png" width="210px"></a> -->
+
+        <a href="html/javascript.html">
+          <img src="img/js.png" id="jsimg" width="135vw">
+        </a>
+      </div>
+
+      <div class="btn">
+        <button><a href="html/html.html">HTML</a></button>
+        <!-- <button><a href="html/css.html">CSS</a></button> -->
+        <button><a href="html/javascript.html">JavaScript</a></button>
+      </div>
+
+    </div>
+
+    <div class="language">
+
+      <h3>Programming Languages</h3>
+
+      <div class="img">
+        <a href="html/c.html">
+          <img src="img/c.png" alt="C Programming Language Logo" width="135vw">
+        </a>
+
+        <a href="html/cpp.html">
+          <img src="img/cpp.png" alt="C++ Programming Language Logo" width="135vw">
+        </a>
+
+        <a href="html/python.html">
+          <img src="img/python.png" alt="Python Programming Language Logo" width="135vw">
+        </a>
+      </div>
+
+      <div class="btn">
+        <button id="htmlbtn"><a href="html/c.html">C</a></button>
+        <script type="text/javascript">
+          document.getElementById("htmlbtn").onclick = function() {
+            location.href = "html/html.html";
+          };
+        </script>
+        <button><a href="html/cpp.html">C++</a></button>
+        <button><a href="html/python.html">Python</a></button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="about-body">
+    <div>
+      <h2>ABOUT US</h2>
+    </div>
+    <div class="about-banner">
+      <h3>One of the best website on the internet to learn coding. <br>Provide detailed information <br>Checks your knowledge</h3>
+    </div>
+
+    <div class="about-info">
+      <h4>What is Code Max?</h4>
+      <p>Code Max is an open source platforms for the user to leran coding skills by learning different technologies and languages.</p>
+      <p>All of the contents are available for free of cost.</p>
+    </div>
+
+
+    <div class="about-info">
+      <h4>You Can Help</h4>
+      <p>Many people work very hard to ensure Code Max remains useful, updated, and interesting.</p>
+      <p><b>If you find an error, or a broken link, please tell us about it.(Contact us)</b></p>
+      <p>If you want others to discover Code Max, Do share this website.</p>
+    </div>
+
+    <div class="about-info">
+      <h4>Contact Us</h4>
+      <p>You can directly contact us via mail at <span><b>contact@codemax.in</b></span></p>
+      <h4 style="text-align: center">OR</h4>
+
+      <div class="form">
+        <fieldset>
+          <p class="sign-in">Contact Form</p>
+          <form action="" method="get">
+
+            <div class="point">
+              <label for="user-name">Name</label>
+              <br>
+              <input type="text" name="user-name" id="user-name" required placeholder=" Enter your Full Name">
+            </div>
+
+            <div class="point">
+              <label for="user-mail">Mail Id</label> <br>
+              <input type="email" name="user-mail" id="user-mail" required placeholder=" Enter your Mail Id ">
+            </div>
+
+            <div class="point">
+              <label for="message">Message</label> <br />
+              <textarea name="" id="message" cols="30" rows="5" required placeholder="Enter your Message here"></textarea>
+            </div>
+            <div class="point">
+              <label for="addmessage">Additional Information</label> <br />
+              <textarea name="" id="addmessage" cols="30" rows="5" required placeholder="Enter your additional information here"></textarea>
+            </div>
+
+            <input type="submit" class="button" value="SEND">
+          </form>
+        </fieldset>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <footer>
+    <div class="footer-content">
+      <h3 style="color: #00cca3">CODEMAX</h3>
+      <p>CodeMax is optimized for learning, testing, and training.Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</p>
+      <ul class="socials">
+        <li><a href="# "><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 by CodeMax all Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

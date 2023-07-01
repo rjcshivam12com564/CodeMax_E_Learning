@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python Tutorial | CodeMax</title>
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="logo"><a href="../index.html">CodeMax</a></div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="tutorial.html">Courses</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signin.html" class="sign-up">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="body">
+    <div class="heading">
+      <h2>Python Tutorials</h2>
+    </div>
+
+    <div class="navigation">
+      <h4>What's on this page</h4>
+      <hr>
+      <p><a href="#intro">Introduction</a></p>
+      <p><a href="#getstart">Getting started with Python</a></p>
+      <p><a href="#syntax">Python Syntax</a></p>
+      <p><a href="#variable">Python Variables</a></p>
+      <p><a href="#variablename">Python - Variable Names</a></p>
+      <p><a href="#output">Python - Output Variable</a></p>
+      <p><a href="#datatype">Python Data Types</a></p>
+      <p><a href="#operator">Python Operators</a></p>
+      <p><a href="#condition">Python if..else</a></p>
+      <p><a href="#loops">Python Loops</a></p>
+      <p><a href="#quiz">Python Quiz</a></p>
+    </div>
+
+
+    <div class="sub-point" id="intro">
+      <h3>Introduction</h3>
+      <hr>
+      <h4>What is Python?</h4>
+      <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+      <p>It is used for </p>
+      <ul>
+        <li>web development (server-side scripting)</li>
+        <li>software development</li>
+        <li>Artificial intelligence (A.I)</li>
+        <li>Machine Learning (M.L)</li>
+      </ul>
+      <hr>
+      <h4>What can Python do?</h4>
+      <ul>
+        <li>Python can be used on a server to create web applications.</li>
+        <li>Python can connect to database systems. It can also read and modify files.</li>
+        <li>Python can be used to handle big data and perform complex mathematics.</li>
+        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+      </ul>
+      <hr>
+      <h4>Python Syntax compared to other programming languages</h4>
+      <ul>
+        <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+        <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+        <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+      </ul>
+      <hr>
+      <p>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</p>
+    </div>
+
+    <div class="sub-point" id="getstart">
+      <h3>Getting started with Python</h3>
+      <hr>
+      <h4>Python Installation</h4>
+      <p>Download python onyour device form the official python website <a href="https://www.python.org/">python.org</a></p>
+      <hr>
+      <h4>Python Quickstart</h4>
+      <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
+      <p>Let's write our first Python file, called first.py, which can be done in any text editor.</p>
+
+      <div class="code">
+        <h4>first.py</h4>
+        <div class="actualcode">
+          <code>
+            print("Hello World!")
+          </code>
+        </div>
+      </div>
+      <p>Simple as that. Save your file. and run it.</p>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>Hello World!</code>
+        </div>
+      </div>
+
+      <p>Congratulations, you have written and executed your first Python program.</p>
+
+    </div>
+
+    <div class="sub-point" id="syntax">
+      <h3>Python Syntax</h3>
+      <hr>
+      <h4>Python Indentation</h4>
+      <p>Indentation refers to the spaces at the beginning of a code line.</p>
+      <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+      <p>Python uses indentation to indicate a block of code.</p>
+
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            if 5 > 2: <br>
+            &nbsp; &nbsp;print("Five is greater than two!")
+          </code>
+        </div>
+      </div>
+
+      <p>Python will give you ans <strong> error </strong>if you skip the indentation like this below example :- </p>
+
+      <div class="code">
+        <h4>Example (Indentation Error)</h4>
+        <div class="actualcode">
+          <code>
+            if 5 > 2: <br>
+            print("Five is greater than two!")
+          </code>
+        </div>
+      </div>
+      <!--
+      <div class="output">
+       <h4>Output</h4>
+       <div class="actualcode">
+       <code>Hello World!</code>
+       </div>
+     </div>
+     -->
+      <p>The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            if 5 > 2: <br>
+            &nbsp; &nbsp;print("Five is greater than two!") <br> <br>
+            if 5 > 2: <br>
+            &nbsp; &nbsp; &nbsp; &nbsp;print("Five is greater than two!")
+          </code>
+        </div>
+      </div>
+      <p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:</p>
+      <div class="code">
+        <h4>Example (Indentation Error)</h4>
+        <div class="actualcode">
+          <code>
+            if 5 > 2: <br>
+            &nbsp; &nbso;print("Five is greater than two!") <br>
+            &nbsp; &nbsp; &nbsp;print("Five is greater than two!")
+          </code>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sub-point" id="comment">
+      <h3>Comments in Python</h3>
+      <hr>
+      <ul>
+        <li>Comments can be used to explain Python code.</li>
+        <li>Comments can be used to make the code more readable.</li>
+        <li>Comments can be used to prevent execution when testing code.</li>
+      </ul>
+      <hr>
+      <h4>Single-line Comment</h4>
+      <p>Comments starts with a <code>#</code>, and Python will ignore them. Comments can be placed anywhere of a line, and Python will ignore the rest of the line.</p>
+      <div class="code">
+        <h4>comments.py</h4>
+        <div class="actualcode">
+          <code>
+            # This is an Comment <br>
+            print("Demonstrating Comments in Python") # this line print text in screen
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>Demonstrating Comments in Python</code>
+        </div>
+      </div>
+      <hr>
+      <h4>Multi-line Comment</h4>
+      <p>Python does not really have a syntax for multi line comments.you can use a multiline string.
+        Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it</p>
+      <div class="code">
+        <h4>comments.py</h4>
+        <div class="actualcode">
+          <code>
+            '''<br>This is an multiline comment <br>which will be ignored <br>by interpreter.<br>''' <br>
+            print("Demonstrating Comments in Python")
+          </code>
+        </div>
+      </div>
+      <p>As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.</p>
+    </div>
+
+    <div class="sub-point" id="variable">
+      <h3>Python Variables</h3>
+      <hr>
+      <h4>Creating Variables</h4>
+      <p>Python has no command for declaring a variable.</p>
+      <p>A variable is created the moment you first assign a value to it.</p>
+      <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+
+      <div class="code">
+        <h4>variables.py</h4>
+        <div class="actualcode">
+          <code>
+            x = 5 # x is of type int<br>
+            y = "John" # y is of type string<br>
+            print(x) # prints 5<br>
+            print(y) # prints "John"<br>
+            <br>
+            # overwriting the value of x<br>
+            x = "Sally" # x is now of type str <br>
+            print(x) #prints "Sally"
+          </code>
+        </div>
+      </div>
+      <hr>
+      <h4>Casting</h4>
+      <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            x = int(3) # x will be 3 <br>
+            y = float(3) # y will be 3.0 <br>
+            z = str(3) # z will be '3'<br>
+          </code>
+        </div>
+      </div>
+      <hr>
+      <h4>Get the Type</h4>
+      <p>You can get the data type of a variable with the <code>type()</code> function.</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            x = 5 <br>
+            y = "John"<br>
+            print(type(x))<br>
+            print(type(y))<br>
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>
+            &lt;class 'int'&gt; <br>
+            &lt;class 'str'&gt; <br>
+          </code>
+        </div>
+      </div>
+      <hr>
+      <h4>Single or Double Quotes?</h4>
+      <p>String variables can be declared either by using single or double quotes</p>
+      <hr>
+      <h4>Case-Sensitive</h4>
+      <p>Variable names are case-sensitive.as variable myName and MyName are not same variables.</p>
+
+    </div>
+
+    <div class="sub-point" id="variablename">
+      <h3>Python - Variable Names</h3>
+      <hr>
+      <h4>Variable Names</h4>
+      <p>A variable can have a short name (like a and b) or a more descriptive name (age, name, number).<br> Rules for Python variables :- </p>
+      <ul>
+        <li>A variable name must start with a letter or the underscore character</li>
+        <li>A variable name cannot start with a number</li>
+        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+        <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+      </ul>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            # Correct ways to create variables <br>
+            myvar = "abc" <br>
+            my_var = "abc" <br>
+            _my_var = "abc" <br>
+            myVar = "abc" <br>
+            MYVAR = "abc" <br>
+            myvar2 = "abc" <br>
+            <br>
+            # Wring ways to create variable this will result into error <br>
+            my var = "John" <br>
+            my-var = "John" <br>
+            2myvar = "John" <br>
+          </code>
+        </div>
+      </div>
+      <hr>
+      <h4>Multi Words Variable Names</h4>
+      <p>Variable names with more than one word can be difficult to read.</p>
+      <p>There are several techniques you can use to make them more readable:</p>
+      <hr>
+      <h4>Camel Case</h4>
+      <p>Each word, except the first, starts with a capital letter</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>myAge = 18</code>
+        </div>
+      </div>
+      <hr>
+      <h4>Pascal Case</h4>
+      <p>Each word starts with a capital letter</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          MyAge = 18
+        </div>
+      </div>
+
+      <hr>
+      <h4>Snake Case</h4>
+      <p>Each word is separated by an underscore character</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          my_age = 18
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-point" id="output">
+      <h3>Python - Output Variables</h3>
+      <hr>
+      <h4>Output Variables</h4>
+      <p>The Python <code> print()</code> function is often used to output variables. we have already seen it in previous examples.</p>
+      <p>In the <code> print() </code> function, you output multiple variables, separated by a comma</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            x = "Python " <br>
+            y = "is " <br>
+            z = "awesome" <br>
+            print(x, y, z)
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          Python is awesome
+        </div>
+      </div>
+
+      <p>For numbers, the + character works as a mathematical operator:</p>
+
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            x = 5 <br>
+            y = 10 <br>
+            print(x + y)
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          15
+        </div>
+      </div>
+      <p>In the <code> print() </code> function, when you try to combine a string and a number with the + operator, Python will give you an error</p>
+      <p>The best way to output multiple variables in the <code> print() </code> function is to separate them with commas, which even support different data types</p>
+    </div>
+
+    <div class="sub-point" id="datatype">
+      <h3>Python Data Types</h3>
+      <hr>
+      <h3>Python Numbers</h3>
+      <p>There are basically two numeric types in Python</p>
+      <ul>
+        <li><code>int</code></li>
+        <li><code>float</code></li>
+      </ul>
+      <hr>
+      <h4>Int</h4>
+      <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+      <hr>
+      <h4>Float</h4>
+      <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+      <hr>
+      <h4>Example of Inta and Float Data type</h4>
+      <p><strong>Note :</strong> <code>type()</code> returns the data type of the given variable.</p>
+
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            int1 = 123 <br>
+            int2 = -35654887711 <br>
+            <br>
+            float1 = 1.0 <br>
+            float2 = -35.59 <br>
+            print(type(int1)) <br>
+            print(type(int2)) <br>
+            print(type(float1)) <br>
+            print(type(float2))
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>
+            &lt;class 'int'&gt;<br>
+            &lt;class 'int'&gt;<br>
+            &lt;class 'float'&gt;<br>
+            &lt;class 'float'&gt;<br>
+          </code>
+        </div>
+      </div>
+
+      <hr>
+      <h5>Python Type Casting</h5>
+      <p>There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.</p>
+      <p>Casting in python is therefore done using constructor functions:-</p>
+      <ul>
+        <li><code>int()</code> - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number)</li>
+        <li><code>float()</code> - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)</li>
+        <li><code>str()</code>constructs a string from a wide variety of data types, including strings, integer literals and float literals</li>
+      </ul>
+
+      <div class="code">
+        <h4>Example (int type casting)</h4>
+        <div class="actualcode">
+          <code>
+            x = int(1) # x will be 1 <br>
+            y = int(2.8) # y will be 2 <br>
+            z = int("3") # z will be 3 <br>
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Example (float type casting)</h4>
+        <div class="actualcode">
+          <code>
+            x = float(1) # x will be 1.0 <br>
+            y = float(2.8) # y will be 2.8 <br>
+            z = float("3") # z will be 3.0 <br>
+            w = float("4.2") # w will be 4.2 <br>
+          </code>
+        </div>
+      </div>
+
+      <div class="code">
+        <h4>Example (string type casting)</h4>
+        <div class="actualcode">
+          <code>
+            x = str("s1") # x will be 's1' <br>
+            y = str(2) # y will be '2' <br>
+            z = str(3.0) # z will be '3.0' <br>
+          </code>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sub-point" id="operator">
+      <h3>Python Operators</h3>
+      <hr>
+      <p>Operators are used to perform operations on variables and values.</p>
+      <p>Following are the operators available in Python language :- </p>
+      <ul>
+        <li>Arithmetic operators</li>
+        <li>Assignment operators </li>
+        <li>Comparison operators </li>
+        <li>Logical operators</li>
+        <li>Bitwise operators</li>
+        <li>Identity operators</li>
+        <li>Membership operators</li>
+      </ul>
+      <hr>
+      <h4>Arithmetic Operators</h4>
+      <p>Arithmetic operators are used to perform common mathematical operations.</p>
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>+</td>
+            <td>Addition</td>
+            <td>Adds together two values</td>
+            <td>x + y</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>Subtraction</td>
+            <td>Subtracts one value from another</td>
+            <td>x - y</td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>Multiplication</td>
+            <td>Multiplies two values</td>
+            <td>x * y</td>
+          </tr>
+          <tr>
+            <td>/</td>
+            <td>Division</td>
+            <td>Divides one value by another</td>
+            <td>x / y</td>
+          </tr>
+          <tr>
+            <td>%</td>
+            <td>Modoulus</td>
+            <td>Returns the division remainder</td>
+            <td>x % y</td>
+          </tr>
+          <tr>
+            <td>++</td>
+            <td>Increment</td>
+            <td>Increases the value of a variable by 1</td>
+            <td>++x , x++</td>
+          </tr>
+          <tr>
+            <td>--</td>
+            <td>Decrement</td>
+            <td>Decreases the value of a variable by 1</td>
+            <td>--x , x--</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Assignment Operators</h4>
+      <p>Assignment operators are used to assign values to variables. we use the assignment operator (=) to assign the value </p>
+
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Example</th>
+          <th>Same as</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>=</td>
+            <td>x = 5</td>
+            <td>x = 5</td>
+          </tr>
+          <tr>
+            <td>+=</td>
+            <td>x += 5</td>
+            <td>x = x + 5</td>
+          </tr>
+          <tr>
+            <td>-=</td>
+            <td>x -= 5</td>
+            <td>x = x - 5</td>
+          </tr>
+          <tr>
+            <td>*=</td>
+            <td>x *= 5</td>
+            <td>x = x * 5</td>
+          </tr>
+          <tr>
+            <td>/=</td>
+            <td>x /= 5</td>
+            <td>x = x / 5</td>
+          </tr>
+          <tr>
+            <td>%=</td>
+            <td>x %= 5</td>
+            <td>x = x % 5</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <h4>Comparison Operators</h4>
+      <p>Comparison operators are used to compare two values. </p>
+      <p> <strong>Note : </strong>The return value of a comparison is either true (1) or false (0).</p>
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Name</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>==</td>
+            <td>Equals to</td>
+            <td>x == y</td>
+          </tr>
+          <tr>
+            <td>!=</td>
+            <td>Not equals to</td>
+            <td>x != y</td>
+          </tr>
+          <tr>
+            <td>></td>
+            <td>Greater than</td>
+            <td>x > y</td>
+          </tr>
+          <tr>
+            <td>
+              << /td>
+            <td>Less than</td>
+            <td>x < y</td>
+          </tr>
+          <tr>
+            <td>>=</td>
+            <td>Greater than equals to</td>
+            <td>x >= y</td>
+          </tr>
+          <tr>
+            <td>
+              <=< /td>
+            <td>Less than equals to</td>
+            <td>x <= y</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Logical Operators</h4>
+      <p>Logical operators are used to determine the logic between variables or values</p>
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&&</td>
+            <td>Logical And</td>
+            <td>Returns true,<br> if both statements are true</td>
+            <td>x < 5 && x < 10</td>
+          </tr>
+          <tr>
+            <td>||</td>
+            <td>Logical Or</td>
+            <td>Returns true,<br> if any one of the statements are true</td>
+            <td>x < 5 || x < 10</td>
+          </tr>
+          <tr>
+            <td>!</td>
+            <td>Logical Not</td>
+            <td>Reverse the result, <br>returns false if the result is true</td>
+            <td>!(x < 5 && x < 10)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Identity Operators</h4>
+      <p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location</p>
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Description</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>is</td>
+            <td>Returns True, <br>if both variables are the same object</td>
+            <td>x is y</td>
+          </tr>
+          <tr>
+            <td>is not</td>
+            <td>Returns True,<br>if both variables are not the same object</td>
+            <td>x is not y</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Membership Operators</h4>
+      <p>Membership operators are used to test if a sequence is presented in an object</p>
+      <table border="1">
+        <thead>
+          <th>Operator</th>
+          <th>Description</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>in</td>
+            <td>Returns True,<br> if a sequence with the specified value <br> is present in the object</td>
+            <td>x in y</td>
+          </tr>
+          <tr>
+            <td>not in</td>
+            <td>Returns True,<br> if a sequence with the specified value <br> is not present in the object x not in </td>
+            <td>x not in y</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+    <div class="sub-point" id="condition">
+      <h3>Python If ... Else</h3>
+      <hr>
+      <p>Situations arise in programming also where we need to make some decisions and based on these decisions we will execute the next block of code. Decision-making statements in programming languages decide the direction of the flow of program execution. </p>
+      <hr>
+      <h4>if..else statement</h4>
+      <p>It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then if block statement is executed otherwise else block statement execute and else block is optional.</p>
+      <div class="code">
+        <h4>Syntax ( if .. else block )</h4>
+        <div class="actualcode">
+          <code>
+            if condition: <br>
+            &nbsp;&nbsp;# Statements to execute if <br>
+            &nbsp;&nbsp;# condition is true <br> <br>
+            else: <br>
+            &nbsp;&nbsp;# Statements to execute if <br>
+            &nbsp;&nbsp;# condition is false<br>
+          </code>
+        </div>
+      </div>
+      <p><strong>Note :</strong> that (<code>:</code>) semicolon is must </p>
+      <hr>
+      <h4>if-elif-else ladder</h4>
+      <p>if else were been same and the elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition"</p>
+      <div class="code">
+        <h4>Syntax ( if .. elif .. else block )</h4>
+        <div class="actualcode">
+          <code>
+            if condition: <br>
+            &nbsp;&nbsp;# Statements to execute if <br>
+            &nbsp;&nbsp;# condition is true <br> <br>
+            elif condition: <br>
+            &nbsp;&nbsp;# if the if block is not excuted <br>
+            &nbsp;&nbsp;# then it will cehck for elif block condition <br> <br>
+            else: <br>
+            &nbsp;&nbsp;# Statements to execute if <br>
+            &nbsp;&nbsp;# condition is false<br>
+          </code>
+        </div>
+      </div>
+      <p>Let look for an example bas e in conditional statement</p>
+      <div class="code">
+        <h4>condition.py</h4>
+        <div class="actualcode">
+          <code>
+            a = 40 <br>
+            b = 35 <br> <br>
+            if b > a: <br>
+            &nbsp;&nbsp;print("b is greater than a") <br>
+            elif a == b: <br>
+            &nbsp;&nbsp;print("a and b are equal") <br>
+            else: <br>
+            &nbsp;&nbsp;print("a is greater than b") <br>
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>
+            a is greater than b
+          </code>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-point" id="loops">
+      <h3>Python Loops</h3>
+      <hr>
+      <p>Python has two primitive loop commands</p>
+      <ul>
+        <li>While loop</li>
+        <li>for loop</li>
+      </ul>
+      <hr>
+      <h4>while Loop</h4>
+      <p>With the &nbsp;<code>while </code> loop we can execute a set of statements as long as a condition is true. And there is an optional &nbsp;<code>else</code> block normally ee use it to know whether we are out of loop or not.</p>
+      <div class="code">
+        <h4>Syntax</h4>
+        <div class="actualcode">
+          <code>
+            while condition: <br>
+            &nbsp;&nbsp;# code to be excuted then condition satisfied <br>
+            else: <br>
+            &nbsp;&nbsp;# block of code
+          </code>
+        </div>
+      </div>
+      <p>The &nbsp;<code> while</code> loop requires relevant variables to be ready, in this example we need to define an indexing variable, i or anything, which we set to.</p>
+      <p>lets look for an example based on while loop.</p>
+      <div class="code">
+        <h4>if__else.cpp (Example)</h4>
+        <div class="actualcode">
+          <code>
+            i = 1 <br> <br>
+            while i < 6: <br>
+              &nbsp;&nbsp;print(i) <br>
+              &nbsp;&nbsp;i += 1
+          </code>
+        </div>
+      </div>
+
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>1 <br>2 <br> 3 <br> 4 <br> 5 </code>
+        </div>
+      </div>
+      <p><strong>Note :</strong> Remember to increment the variable, or else the loop will continue forever.</p>
+      <hr>
+      <h4>for loop</h4>
+      <p>A &nbsp;<code>for </code>loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+      <p>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+      <div class="code">
+        <h4>Example</h4>
+        <div class="actualcode">
+          <code>
+            i = 1 <br> <br>
+            for i in range(0,6): <br>
+            &nbsp;&nbsp;print(i)
+          </code>
+        </div>
+      </div>
+      <div class="output">
+        <h4>Output</h4>
+        <div class="actualcode">
+          <code>
+            1 <br> 2 <br> 3 <br> 4 <br> 5
+          </code>
+        </div>
+      </div>
+      <p> <strong>Note : </strong> <code>range()</code> is a function which take two parameters first initial value and second is last value and here all value automatically increments by 1</p>
+      <p>With the &nbsp;<code>for </code>loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+
+
+    </div>
+
+    <div class="sub-point" id="quiz">
+      <p>If you want to test yourself then must perform our <strong><a href="pythonquiz.html" style="color: rgba(0, 0, 0, 0.7)">Python Quiz</a></strong></p>
+    </div>
+  </section>
+
+
+  <footer class="lastblock">
+    <div class="footer-content">
+      <h3>CODEMAX</h3>
+      <p>CodeMax is optimized for learning, testing, and training.Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</p>
+      <ul class="socials">
+        <li><a href="# "><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 by CodeMax all Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | CodeMax</title>
+  <link rel="stylesheet" href="../ss/style.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: url(../img/loginbackground3.jpg);
+      background-repeat: no-repeat;
+      background-size: 100vw;
+    }
+
+    .form {
+      margin: 9vw;
+    }
+
+    fieldset {
+      border: 2px solid rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      margin: auto;
+      width: 69%;
+      background-color: rgba(0, 0, 0, 0.2)
+    }
+
+    .point {
+      margin: 14px;
+    }
+
+    .button {
+      color: black;
+      background-color: whitesmoke;
+      margin: 10px 20px;
+      width: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.9);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.0)
+    }
+
+    input {
+      width: 90%;
+      height: auto;
+      background: whitesmoke;
+      padding: 7px 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.5) color: rgba(0, 0, 0, 0.5);
+    }
+
+    .p {
+      font-size: 1.2rem;
+      padding: 3px;
+      margin: 0px 20px;
+    }
+
+    .sign-up {
+      font-size: 1.8rem;
+      font-weight: 620;
+      text-align: center;
+    }
+
+    label {
+      font-size: 1.2rem;
+    }
+
+    a {
+      color: rgba(0, 0, 0, 0.9)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form">
+    <fieldset>
+      <p class="sign-up">Sign-up</p>
+      <form action="" method="get">
+
+        <div class="point">
+          <label for="user-name">Name</label>
+          <br>
+          <input type="text" name="user-name" id="user-name" required placeholder=" Enter your Full Name">
+        </div>
+
+        <div class="point">
+          <label for="user-mail">Mail Id</label> <br>
+          <input type="email" name="user-mail" id="user-mail" required placeholder=" Enter your Mail Id ">
+        </div>
+
+        <div class="point">
+          <label for="user-number">Contact No.</label>
+          <input type="number" name="contact" id="user-number" required placeholder="Enter your Number">
+
+        </div>
+
+        <div class="point">
+          <label for="user-password">Password</label> <br />
+          <input type="password" name="user-password" id="user-password" required placeholder=" Enter your Password">
+        </div>
+
+        <input type="submit" class="button" value="REGISTER">
+      </form>
+    </fieldset>
+
+  </div>
+
+</body>
+
+</html>
